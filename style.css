@@ -9,17 +9,29 @@ body{
     width: 960px;
     height: 650px;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
-    width: 100%;
-    float: left;
+    
+    position: relative;
 }
 
+.tittle{
+    text-align: center;
+}
+
+.logoImg{
+    position: absolute;
+    top: 0;
+    
+}
 .izquierdo{
     float: left;
     width: 70%;
     height: 70%;
     border-radius: 24px;
+    border: 1px solid red;
 }
 .derecho{
     float: right;
@@ -27,17 +39,14 @@ body{
     height: auto;
     border-radius: 24px;
     background: white;
+    border: 1px solid blue;
+    top: 20px;
 }
 .buttons{
     float: left;
     width: 70%;
     height: auto;
     border-radius: 24px;
-}
-.logoImg{
-    margin-top: 1%;
-    margin-left: 5%;
-    float: inherit;
 }
 .tittle{
     float: inherit;
@@ -97,7 +106,6 @@ body{
 
 
 #botonCopiar{
-    display: none;
     padding: 24px;
     width: 30%;
     height: 30%;

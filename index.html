@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="logo">
+        <img class="logoImg"  src="img/Logo.svg" alt="logo">
+        <h1 class="tittle">ENCRIPTADOR DE TEXTO - ALURA</h1>
+    </div>
     <div class="container">
-        <div class="logo">
-            <img class="logoImg"  src="img/Logo.svg" alt="logo">
-            <h1 class="tittle">ENCRIPTADOR DE TEXTO - ALURA</h1>
-        </div>
         <div class="izquierdo">
-        <input class="text-input" type="text" placeholder="Ingrese el texto aquí" id="textoEncriptado">
+            <input class="text-input" type="text" placeholder="Ingrese el texto aquí" id="textoEncriptado">
+            <div class="buttons">
+                <p><img src="img/alerta.svg">   Solo minusculas y sin acentos.</p>
+                
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button"id="botonDesencriptado">Desencriptar</button>
+            </div>
+
         </div>
         <div class="derecho">
             <img src="img/Muñeco.svg" id="imgDer">
@@ -22,12 +29,7 @@
             <textarea  class="texto2" name="resultado" id="textoDesencriptado" cols="30" rows="10">Ingrese el texto que desee encriptar o desencriptar.</textarea>
             <button type="button" id="botonCopiar">Copiar</button>
             </div>
-        <div class="buttons">
-        <p><img src="img/alerta.svg">   Solo minusculas y sin acentos.</p>
         
-        <button type="button" id="botonEncriptado">Encriptar</button>
-        <button type="button"id="botonDesencriptado">Desencriptar</button>
-        </div>
         
         
     </div>
